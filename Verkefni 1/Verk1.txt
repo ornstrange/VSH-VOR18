@@ -50,4 +50,27 @@ Verkefni 1, Örn Óli Strange
 		Þetta er eitthvað gott stuff sem er örugglega fínt að nota, skrifað í C sem er
 		alltaf plús.
 
-4.	
+4.	Vafrinn fer á DNS server og þýðir adressuna í ip töluna á servernum,
+    vafrinn sendir svo HTTP request á serverinn, biður serverinn um afrit af vefsíðunni
+    fyrir notanda, þessi skilaboð eru send með TCP/IP, ef að serverinn samþykkir beiðnina frá notanda,
+    þá fær vafrinn send gögn frá síðunni í bútum, vafrinn pússlar þessu saman og tada, vefsíða.
+
+5.  pip er "package control system" fyrir python, sem gerir notendum kleyft að auðveldlega installa
+    modules og aukapökkum fyrir python.
+
+6.  Http 2.0 styður queries multiplexing, header compression, forgang og greindari stjórnun, þetta
+    hefur þær afleiðingar að það er fljótara en 1.1
+
+7.  SSH er dulritunarkerfi sem leyfir notendum að nota örugga leið fyrir net þjónustu á óöruggum netum,
+    lykilorð geta verið leyst með mikilli árás en SSH keys eru næstum ómögulegt að leysa,
+    það er sniðugt að nota SSH og SSH keys þegar maður er að vinna með stór verkefni sem gætu innihaldið
+    persónulegar upplýsingar en í litlum verkefnum sem enginn hefur áhuga á, þá þarf ekki að nota það.
+
+8.  það er þegar maður skráir sig inn á td. síðu, þá fær maður kóða í email eða sms til að klára innsráninguna,
+    þetta er ágæt lausn fyrir öryggi, kemur í veg fyrir margt en það eru gallar, einn galli gæti verið:
+    ef einhver hefur aðgang að lykilorðinu þínu þá er hann líklega með aðgang að lykilorðinu þínu á emailinu,
+    þá er þessi leið bara smá hindrun.
+
+9.  Internet Protocol version 6 er nýjasta útgáfan af IP, út af mikilli umferð á netinu þá fer IPv4 að
+    verða úrelt og IPv6 er hannað til að taka við af IPv4, það skiptir miklu máli út af því að IPv4
+    eru einfaldlega að verða búin.
