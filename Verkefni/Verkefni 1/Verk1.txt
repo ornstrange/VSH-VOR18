@@ -1,0 +1,53 @@
+Verkefni 1, Örn Óli Strange
+
+1.	Ubuntu Server er "server" stýrikerfi, sem er í þróun hjá
+	Canonical og "open source" forriturum um allan heim, stýrikerfið 
+	virkar með nánast öllum kerfishugbúnaði og "virtualization" búnaði.
+	Hann getur sent frá sér vefsíður, bíttað skjölum og styður "containers",
+	auk þess sem það styður "cloud" þjónustu mjög vel.
+
+2.	Apache og Nginx eru tveir algengustu "open source" vef miðlarar heimsins.
+	Þeir tveir saman eru ábyrgir fyrir að þjóna helming af allri umferð á netinu.
+	Bæði Apache og Nginx eru hæfir í að höndla breytilega vinnu og vinna vel
+	með öðrum forritum og búnaði til að mynda fullbúinn vef miðill.
+	Munurinn á þeim stafast aðalega af því að Apache er eldri og er að
+	detta úr tísku og Nginx er að rísa og verður sívinsælli. 
+	Nginx getur ráðið við meira af gögnum og umferð og er talinn
+	geta verið aðeins öruggari. Apache er búinn að vera til í
+	MJÖG langan tíma og þar af leiðandi er til fullt af lesefni
+	um hann og gífurlegur stuðningur frá utanaðkomandi forritum,
+	talað er um að sterkur kostur þess er .htaccess skráin sem apache
+	notar og hversu mikla stjórn er hægt að fá yfir síðunni sinni.
+
+3.	Application miðlar eru notaðir til að þýða forrit og keyra á miðlinum.
+
+	A)	mod_python er Apache "module" sem rótfestir python við serverinn sjálfan,
+		ekki er mælt með honum af nokkrum ástæðum, þar með talið að það sé dautt
+		og úrelt, gæti verið gott að nota ef þú villt forrita og víkka Apache með
+		Python af eitthverjum ástæðum.
+
+	B)	Common Gateway Interface (CGI) er eitthvað eldgamalt stöff sem ég finn lítið um.
+		Held að það sé eitthver application miðlari sem getur verið notaður með fullt af
+		forritunar tungumálum. held að maður noti þetta ekki mikið nú til dags.
+
+	C)	FastCgi and SCGI er eitthverskonar "replacement" fyrir CGI og getur eflaust gert 
+		allt það sama og hann og meira til held ég. eflaust úrelt og ekki mælt með að nota.
+
+	D)	mod_wsgi er WSGI "module" sem ég veit ekkert hvað er, en þetta virðist leyfa þér
+		að keyra python WSGI forrit á Apache HTTP miðlurum, þetta gerir það á svipaðan hátt
+		og mod_python virkar með því að rótfesta python við miðlarann og kera hann. þetta module
+		bíður uppá "daemon" tegund þar sem WSGI forritið er sitt eigið forrit og höndlað af mod_wsgi
+
+	E)	Gunicorn er web miðlari sem býður uppá mikið af möguleikum og er stórkostlega 
+		einfalt að nota. Hann notar "pre-fork" módel sem þýðir að aðal Gunicorn forritið sér 
+		um eitthverskonar minni vinnu-forrit sem sjá um allar beiðnir beint. Og þetta allt er
+		hægt að stilla til að henta hverjum og einum í notkum.   
+
+	F)	uWSGI, þetta virðist vera eitthvað safn af allskonar "components", sem miða á 
+		að bjóða uppá algjöra hugbúnaðar miðlara lausn. Einn af þessum "components", 
+		uWSGI server, keyrir Python WSGI forrit. Hann er hæfur í að nota allskonar
+		"protocols", þar með talið "uwsgi wire protocol", sem er tiltölulega líkt SCGI.
+		Þetta er eitthvað gott stuff sem er örugglega fínt að nota, skrifað í C sem er
+		alltaf plús.
+
+4.	
