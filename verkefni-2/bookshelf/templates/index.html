@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>Bookshelf</title>
+  <meta name="description" content="verkefni 2 vefforritun">
+  <meta name="author" content="Örn Óli Strange">
+
+  <link rel="stylesheet" href="../static/css/main.css">
+</head>
+
+<body>
+  <h1 class="title">Bookshelf</h1>
+  {% for book in booklist %}
+  <div class="book">
+    <div class="name">
+      <a href="./book/{{ book.name }}">{{ book.name }}</a>
+    </div>
+    <div class="author">{{ book.author }}</div>
+    <div class="release">{{ book.release }}</div>
+  </div>
+  {% endfor %}
+</body>
+</html>

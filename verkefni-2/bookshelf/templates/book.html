@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <title>{{ book.name }}</title>
+  <meta name="description" content="book information">
+  <meta name="author" content="Örn Óli Strange">
+
+  <link rel="stylesheet" href="../static/css/main.css">
+</head>
+
+<body>
+  <a href="../" class="back-btn">&lt;<span id="back-text">back it up</span></a>
+  <div class="book-info">
+    <div class="title">{{ book.name }}</div>
+
+    <div class="left">
+      <div class="img"><img src="{{ book.img }}"></div>
+    </div>
+
+    <div class="right">
+      <ul class="info-list">
+        <li class="author">{{ book.author }}</li>
+        <li class="price">{{ book.price }}$</li>
+        <li class="release">{{ book.release }}</li>
+        <li class="type">{{ book.type }}</li>
+        <li class="info">{{ book.info }}</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
