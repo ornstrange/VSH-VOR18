@@ -1,0 +1,13 @@
+a)  MVC er skammstöfun á "Model-View-Controller", sem gegna mismunandi hlutverkum í að láta vefsíðu virka.
+    "Model" sér um að geyma öll gögn og útreikninga. "View" sér um að raða gögnunum upp og birta þau og
+    er það sem notandinn sér og snertir. "Controller'inn" er sá sem að lætur þessa tvo tala saman og
+    segir þeim hvað þeir eiga gefa hvor öðrum og tengir þá saman.
+
+b)  "Ajax" stendur fyrir "Asynchronous Javascript and XML", tilgangur þess er að gera notendum kleyft að
+    sækja og senda gögn án þess að sækja alla síðuna aftur; þar kemur "Asynchronous". HTML5 WebSockets
+    komu í HTML5 og eru tiltölulega ný, þau gera þér kleyft að láta JavaScript hafa opna tengingu við
+    vef-serverinn og geta þeir talað fram og til baka; ekki bara svona one time packets fram og til baka.
+
+b)  Þegar talað er um MV* á frontend er oftast verið að tala um eitthvað JavaScript framework sem gerir
+    eiginlega allt hjá client'inum. Framework'ið sér þá um að render'a allt viewið og breyta þeim á flugi.
+    Oftast notast þau við Ajax til að sækja gögn og vinnur með þeim.
