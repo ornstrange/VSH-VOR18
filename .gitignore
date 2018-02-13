@@ -1,3 +1,20 @@
+# pycharm
 .idea/
+
+# python
 __pycache__/
+*.py[cod]
+*$py.class
+
+# sock files
+*.sock
+
+# vscode
 .vscode/
+
+# flask stuff
+instance/
+.webassets-cache
+
+
+
