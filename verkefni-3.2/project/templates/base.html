@@ -1,0 +1,17 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - verk3.2</title>
+    {% else %}
+    <title>Verkefni 3.2</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Verkefni 3.2:
+      <a href="{{ url_for('index')  }}">Home</a>
+      <a href="{{ url_for('login')  }}">Login</a>
+    </div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
