@@ -1,0 +1,2 @@
+1. 	ORM er leið til að hlutbinda hluti sem eru ekki búnir til þannig. Eins og tildæmis gagnagrunnur, það er hægt að tala við hann og ná í gögn
+		en þá er það oft með queryies og náð í línur fyrir línu, með ORM erum við að búa til leið til að ná í hluti með "hlutbundinni" hegðun.
