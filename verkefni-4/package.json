@@ -1,0 +1,17 @@
+{
+  "name": "verkefni-4",
+  "version": "1.0.0",
+  "description": "ui ux verkefni í vef",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Örn Óli Strange",
+  "license": "ISC",
+  "devDependencies": {
+    "tachyons": "^4.9.1"
+  },
+  "dependencies": {
+    "npm": "^5.7.1"
+  }
+}
