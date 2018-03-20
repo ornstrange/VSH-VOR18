@@ -1,0 +1,31 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{% if title %}
+		<title>{{ title }}</title>
+		{% else %}
+		<title>VSH-VOR18</title>
+		{% endif %}
+		<!-- CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/tachyons.min.css') }}">
+	</head>
+	<body class="sans-serif">
+		<nav class="dt w-100 border-box pa3 ph5-ns">
+			<p class="dtc v-mid mid-gray w-25 garamond f2 fw5">Jaws.</p>
+			<div class="dtc v-mid w-75 tr">
+				<a class="link dim dark-gray f6 f5-ns dib mr2 mr4-ns" href="/" title="About">Forsíða</a>
+				<a class="link dim dark-gray f6 f5-ns dib mr2 mr4-ns" href="/actors" title="Store">Leikarar</a>
+				<a class="link dim dark-gray f6 f5-ns dib" href="/contact" title="Contact">Hafa Samband</a>
+			</div>
+		</nav>
+
+		{% block content %}{% endblock %}
+
+		<footer class="dt h3 w-100 mt2 ph3 ph4-ns pv3 bt b--black-10">
+			<p class="dtc v-mid w-60 ma0 f6 fw4 b ttu tl gray">&copy; 2018 Örn Óli Strange</p>
+			<a href="mailto:orn@strange.is" class="dtc v-mid w-40 ma0 link tr b f5 f4-ns near-black dim">orn@strange.is</a>
+		</footer>
+		<script src="{{ url_for('static', filename='js/index.js')}}"></script>
+	</body>
+</html>
