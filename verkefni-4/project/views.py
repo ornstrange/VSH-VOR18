@@ -8,3 +8,7 @@ def index():
 @app.route('/actors')
 def actors():
   return render_template('actors.html', title='Leikarar')
+
+@app.route('/contact')
+def contact():
+  return render_template('contact.html', title='Hafa Samband')
