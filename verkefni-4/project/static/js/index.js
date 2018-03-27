@@ -1,3 +1,4 @@
+// ACTORS
 for (let i = 0; i < 4; i++) {
 	let elActor = document.getElementById("actor-" + i);
 	let elActorImg = elActor.childNodes[1];
@@ -19,3 +20,6 @@ for (let i = 0; i < 4; i++) {
 		}
 	}, false);
 }
+
+// VALIDATE
+
